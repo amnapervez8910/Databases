@@ -1,0 +1,18 @@
+services:
+  mongo-dev:
+    image: mongo:7.0
+    volumes:
+      - mongo7-dev-data:/data/db
+  mongo-test:
+    image: mongo:7.0
+    volumes:
+      - mongo7-test-data:/data/db
+  mongo-prod:
+    image: mongo:7.0
+    volumes:
+      - mongo7-prod-data:/data/db
+
+volumes:
+  mongo7-dev-data:
+  mongo7-test-data:
+  mongo7-prod-data:
